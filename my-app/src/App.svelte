@@ -1,27 +1,26 @@
 <script>
-  import logo from './assets/svelte.png'
-  import Counter from './lib/Counter.svelte'
+import { Map } from '@beyonk/svelte-mapbox'
+
+
 </script>
 
 <main>
-  <img src={logo} alt="Svelte Logo" />
-  <h1>Hello world!</h1>
+  <Map
+  accessToken="pk.eyJ1Ijoic3BlbmNlcmVhZ2xldG9uIiwiYSI6ImNsNTF6cXJmYTA1NXEza290ZjgxYnR6a2UifQ.dctP4IPprh_LaSDHqR-moQ" 
 
-  <Counter />
+  options={{ scrollZoom: false }}
+>
 
-  <p>
-    Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
-    apps.
-  </p>
+</Map>
 
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
-    the officially supported framework, also powered by Vite!
-  </p>
 </main>
 
 <style>
-  :root {
+
+   main {
+        height: 200px;
+   }
+  /* :root {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
@@ -61,5 +60,5 @@
     p {
       max-width: none;
     }
-  }
+  } */
 </style>
