@@ -9,13 +9,13 @@ let mapComponent
 <main>
   <Map
   accessToken="pk.eyJ1Ijoic3BlbmNlcmVhZ2xldG9uIiwiYSI6ImNsNTF6cXJmYTA1NXEza290ZjgxYnR6a2UifQ.dctP4IPprh_LaSDHqR-moQ" 
-  options={{ scrollZoom: false, center: [-74, 40.7] }}>
+  options={{ scrollZoom: true, center: [-74, 40.7] }}>
 <Marker
   lat={40.7127281}
   lng={-74.0060152}
   >
-
 </Marker>
+<NavigationControl />
 </Map>
 
 
