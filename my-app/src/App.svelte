@@ -18,7 +18,7 @@ import { Map } from '@beyonk/svelte-mapbox'
 <style>
 
    main {
-        height: 200px;
+        height: 100vh;
    }
   /* :root {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
