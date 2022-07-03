@@ -1,16 +1,17 @@
 <script>
 import { Map, controls, Marker } from '@beyonk/svelte-mapbox'
 const { GeolocateControl, NavigationControl, ScaleControl } = controls;
-let mapComponent
-
+let mapComponent = Map;
 
 
 </script>
 
+
 <main>
-<Map
+  <Map
   accessToken="pk.eyJ1Ijoic3BlbmNlcmVhZ2xldG9uIiwiYSI6ImNsNTF6cXJmYTA1NXEza290ZjgxYnR6a2UifQ.dctP4IPprh_LaSDHqR-moQ" 
   options={{ scrollZoom: true, center: [-74, 40.7] }}>
+  bind:this={mapComponent}
 <Marker
   label={'New York'}
   lat={40.7127281}
@@ -19,10 +20,10 @@ let mapComponent
 </Marker>
 <NavigationControl />
 </Map>
-
-
-
 </main>
+
+
+
 
 <style>
 
@@ -71,3 +72,4 @@ let mapComponent
     }
   } */
 </style>
+
