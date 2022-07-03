@@ -4,13 +4,15 @@ const { GeolocateControl, NavigationControl, ScaleControl } = controls;
 let mapComponent
 
 
+
 </script>
 
 <main>
-  <Map
+<Map
   accessToken="pk.eyJ1Ijoic3BlbmNlcmVhZ2xldG9uIiwiYSI6ImNsNTF6cXJmYTA1NXEza290ZjgxYnR6a2UifQ.dctP4IPprh_LaSDHqR-moQ" 
   options={{ scrollZoom: true, center: [-74, 40.7] }}>
 <Marker
+  label={'New York'}
   lat={40.7127281}
   lng={-74.0060152}
   >
